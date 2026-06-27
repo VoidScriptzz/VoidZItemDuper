@@ -3,7 +3,7 @@ local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 
 local gui = Instance.new("ScreenGui")
-gui.Name = "ZeroFruitDuper"
+gui.Name = "VoidsItemDuper"
 gui.ResetOnSpawn = false
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 gui.Parent = player.PlayerGui
@@ -66,7 +66,7 @@ title.Name = "Title"
 title.Size = UDim2.new(1, -20, 1, 0)
 title.Position = UDim2.new(0, 10, 0, 0)
 title.BackgroundTransparency = 1
-title.Text = "Zero's Fruit Duper"
+title.Text = "Void's Item Duper"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 20
 title.Font = Enum.Font.GothamBold
@@ -80,7 +80,7 @@ btn.Size = UDim2.new(0, 220, 0, 50)
 btn.Position = UDim2.new(0.5, -110, 0, 75)
 btn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 btn.BorderSizePixel = 0
-btn.Text = "Dupe Fruit"
+btn.Text = "Dupe Item"
 btn.TextColor3 = Color3.fromRGB(30, 100, 220)
 btn.TextSize = 18
 btn.Font = Enum.Font.GothamBold
@@ -114,7 +114,7 @@ creditLabel.Name = "CreditLabel"
 creditLabel.Size = UDim2.new(1, -20, 0, 18)
 creditLabel.Position = UDim2.new(0, 10, 1, -26)
 creditLabel.BackgroundTransparency = 1
-creditLabel.Text = "Made By Zero | YT: ZeroScriptsOnTop"
+creditLabel.Text = "Made By Void | YT: xxxvoid_scriptzxxx"
 creditLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 creditLabel.TextSize = 12
 creditLabel.Font = Enum.Font.GothamMedium
@@ -146,7 +146,7 @@ btn.MouseButton1Click:Connect(function()
     
     local tool = char:FindFirstChildOfClass("Tool")
     if not tool then 
-        statusLabel.Text = "No Fruit Held"
+        statusLabel.Text = "No Item Held"
         statusLabel.TextColor3 = Color3.fromRGB(255, 120, 120)
         return 
     end
